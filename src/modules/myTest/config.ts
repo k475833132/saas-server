@@ -6,9 +6,9 @@ import { ModuleConfig } from '@cool-midway/core';
 export default () => {
   return {
     // 模块名称
-    name: 'demo模块',
+    name: 'myTest模块',
     // 模块描述
-    description: '自己测试',
+    description: '演示用',
     // 中间件，只对本模块有效
     middlewares: [],
     // 中间件，全局有效

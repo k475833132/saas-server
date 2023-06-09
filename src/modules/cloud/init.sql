@@ -3,7 +3,7 @@
 -- Records of cloud_db
 -- ----------------------------
 BEGIN;
-INSERT INTO `cloud_db` VALUES (13, '2023-02-16 19:25:21.995000', '2023-02-23 12:00:43.621000', '用户', NULL, 'import { BaseEntity } from \'@cool-midway/core\';\nimport { Column, Entity } from \'typeorm\';\n\n/**\n * 描述\n */\n@Entity(\'user\')\nexport class UserEntity extends BaseEntity {\n    @Column({ comment: \'姓名\' })\n    name: string;\n    @Column({ comment: \'年龄\' })\n    age: string;\n}', 'UserEntity', 'func_user', 1);
+INSERT IGNORE INTO `cloud_db` VALUES (13, '2023-02-16 19:25:21.995000', '2023-02-23 12:00:43.621000', '用户', NULL, 'import { BaseEntity } from \'@cool-midway/core\';\nimport { Column, Entity } from \'typeorm\';\n\n/**\n * 描述\n */\n@Entity(\'user\')\nexport class UserEntity extends BaseEntity {\n    @Column({ comment: \'姓名\' })\n    name: string;\n    @Column({ comment: \'年龄\' })\n    age: string;\n}', 'UserEntity', 'func_user', 1);
 COMMIT;
 
 
