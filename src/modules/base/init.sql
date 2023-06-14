@@ -198,28 +198,29 @@ CREATE TABLE `base_sys_menu` (
 -- Records of base_sys_menu
 -- ----------------------------
 BEGIN;
-INSERT INTO `base_sys_menu` VALUES (1002, DEFAULT, DEFAULT, NULL, '租户管理', '/tenant', NULL, 1, 'icon-system', 1, 'cool/modules/base/views/tenant.vue', 1, 1);
+INSERT INTO `base_sys_menu` VALUES (1002, DEFAULT, DEFAULT, NULL, '租户管理', '/tenant', NULL, 1, 'icon-system', 1, 'cool/modules/tenant/views/index.vue', 1, 1);
 
-INSERT INTO `base_sys_menu` VALUES (1003, DEFAULT, DEFAULT, NUll, '仓储管理', NULL, NULL, 0, 'icon-menu', 2, NULL, 1, 1);
-INSERT INTO `base_sys_menu` VALUES (1004, DEFAULT, DEFAULT, 1003, '仓库管理', '/store/manage', NULL, 1, 'icon-dept', 1, 'cool/modules/base/views/store/manage.vue', 1, 1);
-INSERT INTO `base_sys_menu` VALUES (1005, DEFAULT, DEFAULT, 1003, '出入库管理', '/store/activity', NULL, 1, 'icon-auth', 2, 'cool/modules/base/views/store/activity.vue',  1, 1);
+INSERT INTO `base_sys_menu` VALUES (1003, DEFAULT, DEFAULT, NUll, '仓储管理', NULL, NULL, 0, 'icon-menu', 1, NULL, 1, 1);
+INSERT INTO `base_sys_menu` VALUES (1004, DEFAULT, DEFAULT, 1003, '仓库管理', '/store/manage', NULL, 1, 'icon-dept', 1, 'cool/modules/store/views/manage.vue', 1, 1);
+INSERT INTO `base_sys_menu` VALUES (1005, DEFAULT, DEFAULT, 1003, '出入库管理', '/store/activity', NULL, 1, 'icon-auth', 2, 'cool/modules/store/views/activity.vue',  1, 1);
 
-INSERT INTO `base_sys_menu` VALUES (1006, DEFAULT, DEFAULT, NULL, '加工流程', NULL, NULL, 0, 'icon-auth', 3, NULL,  1, 1);
-INSERT INTO `base_sys_menu` VALUES (1007, DEFAULT, DEFAULT, 1006, '货单', '/process/manifest', NULL, 1, 'icon-auth', 1, 'cool/modules/base/views/process/manifest.vue',  1, 1);
-INSERT INTO `base_sys_menu` VALUES (1008, DEFAULT, DEFAULT, 1006, '食材溯源', '/process/traceability', NULL, 1, 'icon-auth', 2, 'cool/modules/base/views/process/traceability.vue',  1, 1);
 
-INSERT INTO `base_sys_menu` VALUES (1009, DEFAULT, DEFAULT, NULL, '菜品（菜单）管理', NULL, NULL, 0, 'icon-auth', 4, NULL,  1, 1);
-INSERT INTO `base_sys_menu` VALUES (10010, DEFAULT, DEFAULT, 1009, '菜品管理', '/dish/manage', NULL, 1, 'icon-auth', 1, 'cool/modules/base/views/dish/manage.vue',  1, 1);
-INSERT INTO `base_sys_menu` VALUES (10011, DEFAULT, DEFAULT, 1009, '营养分析', '/dish/nutrition', NULL, 1, 'icon-auth', 2, 'cool/modules/base/views/dish/nutrition.vue',  1, 1);
-INSERT INTO `base_sys_menu` VALUES (10012, DEFAULT, DEFAULT, 1009, '分餐比例', '/dish/splitmeal', NULL, 1, 'icon-auth', 3, 'cool/modules/base/views/dish/splitmeal.vue',  1, 1);
-INSERT INTO `base_sys_menu` VALUES (10013, DEFAULT, DEFAULT, 1009, '综合数据', '/dish/comprehensiveData', NULL, 1, 'icon-auth', 4, 'cool/modules/base/views/dish/comprehensiveData.vue',  1, 1);
+INSERT INTO `base_sys_menu` VALUES (1006, DEFAULT, DEFAULT, NULL, '加工流程', NULL, NULL, 0, 'icon-auth', 1, NULL,  1, 1);
+INSERT INTO `base_sys_menu` VALUES (1007, DEFAULT, DEFAULT, 1006, '货单', '/process/manifest', NULL, 1, 'icon-auth', 1, 'cool/modules/process/views/manifest.vue',  1, 1);
+INSERT INTO `base_sys_menu` VALUES (1008, DEFAULT, DEFAULT, 1006, '食材溯源', '/process/traceability', NULL, 1, 'icon-auth', 2, 'cool/modules/process/views/traceability.vue',  1, 1);
 
-INSERT INTO `base_sys_menu` VALUES (10014, DEFAULT, DEFAULT, NULL, '供应商管理', '/supplier', NULL, 1, 'icon-system', 5, 'cool/modules/base/views/supplier.vue', 1, 1);
-INSERT INTO `base_sys_menu` VALUES (10015, DEFAULT, DEFAULT, NULL, '伙食账目', '/foodaccounts', NULL, 1, 'icon-system', 6, 'cool/modules/base/views/foodaccounts.vue', 1, 1);
-INSERT INTO `base_sys_menu` VALUES (10016, DEFAULT, DEFAULT, NULL, '从业人员晨午检', '/inspection', NULL, 1, 'icon-system', 7, 'cool/modules/base/views/inspection.vue', 1, 1);
-INSERT INTO `base_sys_menu` VALUES (10019, DEFAULT, DEFAULT, NULL, '食品留样', '/sample', NULL, 1, 'icon-system', 10, 'cool/modules/base/views/sample.vue', 1, 1);
-INSERT INTO `base_sys_menu` VALUES (10017, DEFAULT, DEFAULT, NULL, '消杀清洗记录', '/records', NULL, 1, 'icon-system', 8, 'cool/modules/base/views/records.vue', 1, 1);
-INSERT INTO `base_sys_menu` VALUES (10018, DEFAULT, DEFAULT, NULL, '客户评价', '/evaluation', NULL, 1, 'icon-system', 9, 'cool/modules/base/views/evaluation.vue', 1, 1);
+INSERT INTO `base_sys_menu` VALUES (1009, DEFAULT, DEFAULT, NULL, '菜品（菜单）管理', NULL, NULL, 0, 'icon-auth', 1, NULL,  1, 1);
+INSERT INTO `base_sys_menu` VALUES (10010, DEFAULT, DEFAULT, 1009, '菜品管理', '/dish/manage', NULL, 1, 'icon-auth', 1, 'cool/modules/dish/views/manage.vue',  1, 1);
+INSERT INTO `base_sys_menu` VALUES (10011, DEFAULT, DEFAULT, 1009, '营养分析', '/dish/nutrition', NULL, 1, 'icon-auth', 2, 'cool/modules/dish/views/nutrition.vue',  1, 1);
+INSERT INTO `base_sys_menu` VALUES (10012, DEFAULT, DEFAULT, 1009, '分餐比例', '/dish/splitmeal', NULL, 1, 'icon-auth', 3, 'cool/modules/dish/views/splitmeal.vue',  1, 1);
+INSERT INTO `base_sys_menu` VALUES (10013, DEFAULT, DEFAULT, 1009, '综合数据', '/dish/comprehensiveData', NULL, 1, 'icon-auth', 4, 'cool/modules/dish/views/comprehensiveData.vue',  1, 1);
+
+INSERT INTO `base_sys_menu` VALUES (10014, DEFAULT, DEFAULT, NULL, '供应商管理', '/supplier', NULL, 1, 'icon-system', 1, 'cool/modules/supplier/views/index.vue', 1, 1);
+INSERT INTO `base_sys_menu` VALUES (10015, DEFAULT, DEFAULT, NULL, '伙食账目', '/foodaccounts', NULL, 1, 'icon-system', 1, 'cool/modules/foodaccounts/views/index.vue', 1, 1);
+INSERT INTO `base_sys_menu` VALUES (10016, DEFAULT, DEFAULT, NULL, '从业人员晨午检', '/inspection', NULL, 1, 'icon-system', 1, 'cool/modules/inspection/views/index.vue', 1, 1);
+INSERT INTO `base_sys_menu` VALUES (10019, DEFAULT, DEFAULT, NULL, '食品留样', '/sample', NULL, 1, 'icon-system', 1, 'cool/modules/sample/views/index.vue', 1, 1);
+INSERT INTO `base_sys_menu` VALUES (10017, DEFAULT, DEFAULT, NULL, '消杀清洗记录', '/records', NULL, 1, 'icon-system', 1, 'cool/modules/records/views/index.vue', 1, 1);
+INSERT INTO `base_sys_menu` VALUES (10018, DEFAULT, DEFAULT, NULL, '客户评价', '/evaluation', NULL, 1, 'icon-system', 1, 'cool/modules/evaluation/views/index.vue', 1, 1);
 
 -- 以下上线时删除
 INSERT INTO `base_sys_menu` VALUES (2, '2019-09-11 11:14:47.000000', '2021-02-27 17:16:05.000000', NULL, '系统管理', '/sys', NULL, 0, 'icon-system', 2, NULL, 1, 1);
