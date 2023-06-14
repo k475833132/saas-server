@@ -19,7 +19,7 @@ export class OutEntity extends BaseEntity {
     @Column({ comment: '货物名称'})
     goodsName: string;
 
-    @Column({ comment: '货物品类'})
+    @Column({ comment: '货物品类', type: 'json'})
     goodsType: number;
 
     @Column({ comment: '数量'})
