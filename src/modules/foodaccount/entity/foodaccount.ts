@@ -26,7 +26,7 @@ export class FoodAccountEntity extends BaseEntity {
   applyer: string;
 
   @Column({ comment: '联系方式' })
-  contact: number;
+  contact: string;
 
   @Column({ comment: '金额' })
   price: number;

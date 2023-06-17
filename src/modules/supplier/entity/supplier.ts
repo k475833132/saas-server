@@ -16,8 +16,5 @@ export class SupplierEntity extends BaseEntity {
     principal: string;
 
     @Column({ comment: '联系电话'})
-    phone: number;
-  // TODO
-  // 归属租户
-  // 需要看一下是否需要关联租户表
+    phone: string;
 }
